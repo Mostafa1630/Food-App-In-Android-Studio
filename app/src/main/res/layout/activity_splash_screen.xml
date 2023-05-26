@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundTint="#C60B0B"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:id="@+id/SplashS_imge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="@drawable/forground_design"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg2"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-44dp" />
+
+    <TextView
+        android:id="@+id/SplashS_appname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SplashS_imge"
+        android:fontFamily="@font/lobster"
+        android:text="My Restaurant App"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="33sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/SplashS_imge"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46" />
+
+    <TextView
+        android:id="@+id/SplashS_textv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" hello explore your dream food"
+        android:textAlignment="center"
+        android:textColor="#FBFBFB"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/SplashS_appname" />
+
+    <Button
+        android:id="@+id/SplashS_reg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
+        android:onClick="SplashS_register"
+        android:padding="14dp"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/SplashS_textv"
+        app:layout_constraintVertical_bias=".7"
+        app:layout_constraintWidth_percent=".8" />
+
+    <TextView
+        android:id="@+id/SplashS_sign"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:foregroundTint="#E91E63"
+        android:onClick="SplashS_login"
+        android:text="Sign In"
+        android:textAlignment="center"
+        android:textColor="#FBFBFB"
+        android:textSize="19sp"
+        android:textStyle="bold"
+
+        app:iconTint="#F1ECEC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/SplashS_reg" />
+</androidx.constraintlayout.widget.ConstraintLayout>
